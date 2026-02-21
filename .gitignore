@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+.venv/
+*/.venv/
+
+# Logs
+logs/
+runs/
+wandb/
+outputs/
+
+# Checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Dataset
+data/
+datasets/
+
+# OS
+.DS_Store
