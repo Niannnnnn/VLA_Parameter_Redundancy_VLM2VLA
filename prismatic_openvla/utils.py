@@ -96,7 +96,7 @@ def load_prismatic_vlm(model_gpu_id=1):
     print(f"正在使用prismatic库加载底层VLM: prism-dinosiglip-224px+7b 到 {device_str}...")
 
     model_id = "prism-dinosiglip-224px+7b"
-    local_dir = f"/home/intern/zhangfengnian/checkpoints/{model_id}"
+    local_dir = f"path/to/local/{model_id}"  # 替换为实际本地路径
 
     try:
         # 尝试加载HF令牌(如果有)

@@ -11,7 +11,7 @@ from transformers import AutoModel
 # Global output directory
 ########################################
 
-OUTPUT_DIR = Path("/home/intern/zhangfengnian/workspace/vlm_vla/paligemma_pi0.5/outputs_pi05_libero")
+OUTPUT_DIR = Path("path/to/output_dir")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -63,7 +63,7 @@ print("\n=== Loading pi05_libero (PyTorch VLA) ===")
 from safetensors.torch import load_file
 
 PI05_LIBERO_PT_DIR = Path(
-    "/home/intern/zhangfengnian/checkpoints/pi05_libero_pytorch"
+    "/path/to/model"
 )
 
 # 1. load state_dict

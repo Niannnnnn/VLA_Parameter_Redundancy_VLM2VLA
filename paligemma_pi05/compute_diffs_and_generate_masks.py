@@ -13,8 +13,7 @@ from transformers import AutoModel
 # ==========================================
 # 配置与路径
 # ==========================================
-# VLA_PATH = Path("/home/intern/zhangfengnian/checkpoints/pi05_libero_pytorch/model.safetensors")
-VLA_PATH = Path("/mnt/afs/huangtao/intern/zhangfengnian/checkpoints/pi05_libero_pytorch/model.safetensors")
+VLA_PATH = Path("path/to/model")
 VLM_NAME = "google/paligemma-3b-mix-224"
 OUTPUT_DIR = Path("./analysis_results_pi05")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

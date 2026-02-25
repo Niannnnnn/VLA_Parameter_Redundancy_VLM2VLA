@@ -16,19 +16,6 @@ Usage:
         --wandb_entity <ENTITY>
 """
 
-'''
-export PYTHONUNBUFFERED=1
-
-CUDA_VISIBLE_DEVICES=1 nohup python eval_multi_module_prune.py \
-    --pruning_mode "masked" \
-    --pretrained_checkpoint "openvla/openvla-7b-finetuned-libero-spatial" \
-    --task_suite_name libero_spatial \
-    --layer_ffn_dims_file '["/mnt/afs/huangtao/intern/zhangfengnian/workspace/vlm_vla/llama_openvla/analysis_results_deltaW_llm_vision_projector/masks_llm_ffn_channel_0.2_biggest_relative_protected_L0_L1_L2_L3_L4_L30_L31.pth", "/mnt/afs/huangtao/intern/zhangfengnian/workspace/vlm_vla/llama_openvla/analysis_results_deltaW_llm_vision_projector/masks_vision_siglip_ffn_channel_0.1_smallest_relative.pth","/mnt/afs/huangtao/intern/zhangfengnian/workspace/vlm_vla/llama_openvla/analysis_results_deltaW_llm_vision_projector/masks_vision_dino_ffn_channel_0.1_biggest_relative.pth"]' \
-    --run_id_note "masks_L_FFN_0.2_B_AND_S_FFN_0.1_S_AND_D_FFN_0.1_B" \
-    > masks_L_FFN_0.2_B_AND_S_FFN_0.1_S_AND_D_FFN_0.1_B.log 2>&1 &
-'''
-print("BEFORE ANY IMPORT")
-
 import os
 import sys
 import torch
@@ -40,8 +27,6 @@ from typing import Optional, Union, Dict, Any, List
 import draccus
 import numpy as np
 import tqdm
-# sys.path.append("/home/intern/zhangfengnian/workspace/LIBERO")
-sys.path.append("/mnt/afs/huangtao/intern/zhangfengnian/workspace/LIBERO")
 from libero.libero import benchmark
 
 import wandb
